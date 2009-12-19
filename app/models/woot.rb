@@ -20,4 +20,9 @@ class Woot
     @price ||= @div.css('h3.price').text
   end
   
+  def self.parse
+    woot = Woot.new
+    {:title => woot.title, :description => woot.description, :price => woot.price}
+  end
+  
 end
