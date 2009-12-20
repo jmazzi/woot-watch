@@ -7,6 +7,10 @@ module WootHelper
   end
   
   def refresh_page(last_item)
-    periodically_call_remote(:url => { :action => 'update', :last_item => last_item })
+    periodically_call_remote(:url => { :action => 'update', :last_item => last_item },
+      :loading => "$('refresh').toggle();$('loading').toggle();",
+      :complete => "$('loading').toggle();$('refresh').toggle();",
+      :frequency => 5
+    )
   end
 end
