@@ -1,5 +1,4 @@
 class WootController < ApplicationController
-
   def index
     update
   end
