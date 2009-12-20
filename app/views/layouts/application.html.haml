@@ -2,7 +2,7 @@
 !!!
 %html{ :'xml:lang' => "en", :lang => "en" }
   %head
-    %title= "#{controller.class.to_s}: #{controller.action_name}"
+    %title= "Woot"
     %meta{ :"http-equiv" => "Content-Type", :content => "text/html; charset=utf-8" }
     %link{ :rel => "shortcut icon", :href => "/favicon.ico" }
     = stylesheet_link_tag "application", :media => "screen"
@@ -10,7 +10,11 @@
   %body
     #wrapper
       #content
-        %h1 Woot
+        %h1 
+          Woot - 
+          %a{:href => "http://r00tshell.com/"} [r00tshell]
+          
+        
         #flash
           - unless flash.empty?
             = content_tag :div, flash[:notice],  :class => "notice"  if flash[:notice]
