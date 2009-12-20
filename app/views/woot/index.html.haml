@@ -1,8 +1,8 @@
 = render(:partial => 'product')
 #refresh
-  = refresh_link
+  = link_to_refresh
   %br
-  %font{:size => 2} This page refreshes automatically every 10 seconds
+    %font{:size => 2} This page refreshes automatically every 10 seconds
 #loading{:style => 'display:none'}
   loading...
-= periodically_call_remote(:url => { :action => 'update' })
+= refresh_page(@woot[:title])
