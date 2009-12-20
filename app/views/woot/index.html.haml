@@ -1,8 +1,7 @@
 = render(:partial => 'product')
 #refresh
   = link_to_refresh
-  %br
-    %font{:size => 2} This page refreshes automatically every 10 seconds
 #loading{:style => 'display:none'}
   loading...
+
 = refresh_page(@woot[:title])
