@@ -6,7 +6,7 @@ class Woot
   attr_reader :doc
   
   def initialize
-    @doc = Nokogiri::HTML(open('http://www.woot.com/'))
+    @doc = Nokogiri::HTML(open('http://www.woot.com/'), nil, 'UTF8')
     @div = @doc.at_css('div.productDescription')
   end
   
