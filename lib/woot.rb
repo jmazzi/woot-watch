@@ -2,7 +2,6 @@ require 'nokogiri'
 require 'open-uri'
 
 class Woot
-  
   attr_reader :div
   attr_reader :doc
   
@@ -32,5 +31,4 @@ class Woot
     woot = Woot.new
     {:title => woot.title, :description => woot.description, :price => woot.price, :href => woot.href}
   end
-  
 end

@@ -2,15 +2,16 @@
 !!!
 %html{ :'xml:lang' => "en", :lang => "en" }
   %head
-    %title= "Woot"
+    %title= "Woot Tracker"
     %meta{ :"http-equiv" => "Content-Type", :content => "text/html; charset=utf-8" }
     %link{ :rel => "shortcut icon", :href => "/favicon.ico" }
     = stylesheet_link_tag "application", :media => "screen"
     = javascript_include_tag :defaults
-    = google_analytics
   %body
     #wrapper
       #content
+        #issues
+          %a{:href => "http://github.com/jmazzi/woot-watch/issues"} Report an issue
         %h1 
           Woot - 
           %a{:href => "http://r00tshell.com/"} [r00tshell]
@@ -24,3 +25,5 @@
           :javascript
             #{visual_effect :highlight, "flash"}
         = yield
+    #footer
+      = google_analytics
