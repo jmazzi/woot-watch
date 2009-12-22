@@ -11,12 +11,12 @@
     #wrapper
       #content
         #issues
-          %a{:href => "http://github.com/jmazzi/woot-watch/issues"} Report an issue
-        %h1 
-          Woot - 
           %a{:href => "http://r00tshell.com/"} [r00tshell]
-          
-        
+          \|
+          %a{:href => "http://github.com/jmazzi/woot-watch/issues"} [Report an issue]
+        %h1
+          #header
+            Woot Tracker
         #flash
           - unless flash.empty?
             = content_tag :div, flash[:notice],  :class => "notice"  if flash[:notice]
