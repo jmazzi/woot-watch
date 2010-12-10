@@ -1,7 +1,7 @@
 require 'nokogiri'
 require 'open-uri'
 
-class Woot
+class WootClient
   attr_reader :div
   attr_reader :doc
   
@@ -28,7 +28,7 @@ class Woot
   
   # nokogiri doesn't have a marshal method
   def self.parse
-    woot = Woot.new
+    woot = new
     {:title => woot.title, :description => woot.description, :price => woot.price, :href => woot.href}
   end
 end
