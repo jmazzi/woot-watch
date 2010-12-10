@@ -1,0 +1,38 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    actionmailer (2.3.8)
+      actionpack (= 2.3.8)
+    actionpack (2.3.8)
+      activesupport (= 2.3.8)
+      rack (~> 1.1.0)
+    activerecord (2.3.8)
+      activesupport (= 2.3.8)
+    activeresource (2.3.8)
+      activesupport (= 2.3.8)
+    activesupport (2.3.8)
+    bouncy-castle-java (1.5.0145.2)
+    haml (3.0.24)
+    jruby-openssl (0.7.2)
+      bouncy-castle-java
+    nokogiri (1.4.4.2-java)
+      weakling (>= 0.0.3)
+    rack (1.1.0)
+    rails (2.3.8)
+      actionmailer (= 2.3.8)
+      actionpack (= 2.3.8)
+      activerecord (= 2.3.8)
+      activeresource (= 2.3.8)
+      activesupport (= 2.3.8)
+      rake (>= 0.8.3)
+    rake (0.8.7)
+    weakling (0.0.4-java)
+
+PLATFORMS
+  java
+
+DEPENDENCIES
+  haml
+  jruby-openssl
+  nokogiri
+  rails (= 2.3.8)
