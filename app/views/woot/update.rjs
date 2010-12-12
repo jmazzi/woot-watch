@@ -1,4 +1,0 @@
-if (!params.has_key?(:last_item) || params[:last_item] != @woot[:title])
-  page.replace_html 'product', :partial => 'product'
-  page.visual_effect :highlight, 'product'
-end

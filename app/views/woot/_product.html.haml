@@ -1,9 +1,0 @@
-#product
-  %h2
-    = link_to("#{@woot[:title]}: #{@woot[:price]}", "http://woot.com", :target => "_blank") << " - "
-    - if @woot[:href].blank?
-      Sold out
-    - else
-      = link_to("[Buy]", "http://woot.com#{@woot[:href]}", :target => "_blank")
-    %p
-      = @woot[:description]
