@@ -1,0 +1,7 @@
+= render(:partial => 'product')
+#refresh
+  = link_to_refresh
+#loading{:style => 'display:none'}
+  loading...
+
+= refresh_page(@woot[:title])

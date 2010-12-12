@@ -1,4 +1,8 @@
 Woot::Application.routes.draw do
+  get "troll/index"
+
+  post "troll/update"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
